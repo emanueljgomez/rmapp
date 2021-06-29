@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginModule } from './modules/login/login.module'; // Autoimport Línea 10 - Modulo custom: LoginModule
+import { HomeModule } from './modules/home/home.module'; // Autoimport Línea 11 - Modulo custom: HomeModule
+import { LoginModule } from './modules/login/login.module'; // Autoimport Línea 11 - Modulo custom: LoginModule
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LoginModule],
+  imports: [BrowserModule, AppRoutingModule, LoginModule, HomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

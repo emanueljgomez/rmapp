@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/login/components/login/login.component'; // Autoimport Líne 5 -- Path a LoginComponent definido, se renderizará en el router-outlet
+import { HomeComponent } from './modules/home/components/home/home.component'; // Autoimport Línea 7 -- Path a LoginComponent definido, se renderizará en el router-outlet
+import { LoginComponent } from './modules/login/components/login/login.component'; // Autoimport Línea 8 -- Path a LoginComponent definido, se renderizará en el router-outlet
 
-const routes: Routes = [{ path: '', component: LoginComponent }];
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', component: LoginComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
