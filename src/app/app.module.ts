@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module'; // Autoimport Línea 11 - Modulo custom: HomeModule
 import { LoginModule } from './modules/login/login.module'; // Autoimport Línea 11 - Modulo custom: LoginModule
 
+import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from '@auth0/auth0-angular';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { AuthModule } from '@auth0/auth0-angular';
       domain: 'rmouzoapp.us.auth0.com',
       clientId: 'heLoPGZ11OwdehoepLVuIiFg3hJWs0iS',
     }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
